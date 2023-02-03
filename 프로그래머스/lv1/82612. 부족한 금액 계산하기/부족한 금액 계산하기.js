@@ -3,5 +3,5 @@ function solution(price, money, count) {
     for(let i = 0;i <= count;i++){
         totalPrice += price * i
     }
-    return totalPrice - money > 0 ? Math.abs(totalPrice - money) : 0
+    return totalPrice - money > 0 ? totalPrice - money : 0
 }
